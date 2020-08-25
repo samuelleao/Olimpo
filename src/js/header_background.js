@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    var menu = document.querySelector('nav');
+    var menu = document.querySelector('nav')
 
     analyzeScroll = () => {
         if (window.pageYOffset < 200) {

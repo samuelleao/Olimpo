@@ -14,7 +14,7 @@ scrollAnimate = (elementTop, elementEffect, className) => {
 
 document.querySelectorAll('.element_scroll_effect').forEach(element => {
     element.classList.add('animate__animated')
-});
+})
     
 window.addEventListener('scroll', () => {
     scrollAnimate('events_area', 'events', 'animate__fadeInUp')

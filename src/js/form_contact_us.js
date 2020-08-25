@@ -103,6 +103,6 @@ formulario_contato_validate = ()=> {
     }
 }
 
-formulario_contato_validate();
+formulario_contato_validate()
 
-telephone();
+telephone()
