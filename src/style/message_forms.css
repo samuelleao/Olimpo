@@ -1,0 +1,38 @@
+.message_effect {
+    transform: translateY(200%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    transition: .3s;
+    z-index: 1;
+}
+
+.error_form{
+    background-color: #FF3939 !important;
+}
+
+
+/* Class 'show_message' to insert in div with form */
+.message_effect.show_message {
+    transform: translateY(0);
+}
+
+@keyframes animateMessage {
+    from {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.show_message img{
+    animation: animateMessage .9s;
+}

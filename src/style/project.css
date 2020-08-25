@@ -1,0 +1,21 @@
+@media(max-width: 991px) {
+    .project_row {
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .project_row::-webkit-scrollbar {
+        height: 10px;
+    }
+    
+    .project_row::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: white;
+        -webkit-box-shadow: white;
+    }
+    .events .container {
+        max-width: 100%;
+    }
+}

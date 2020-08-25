@@ -1,0 +1,31 @@
+.element_category {
+    opacity: 0;
+    display: none;
+}
+
+.category_elements .row{
+    justify-content: space-between;
+}
+
+.category_elements{
+    display: flex;
+    justify-content: center;
+}
+
+.show_elements{
+    opacity: 1 !important;
+    display: flex !important;
+}
+
+.element_category.show_elements{
+    animation: downElement .3s;
+}
+
+@keyframes downElement{
+    from {
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}

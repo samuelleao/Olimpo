@@ -1,0 +1,43 @@
+.bg_primary{
+    background-color: var(--color_primary);
+}
+
+.bg_black{
+    background-color: var(--color_black);
+}
+
+.bg_grey{
+    background-color: var(--color_grey);
+}
+
+.bg_white_ice{
+    background-color: var(--color_white_ice);
+}
+
+.bg_second{
+    background-color: var(--color_second);
+}
+
+.bg_white{
+    background-color: #fff
+}
+
+.color_primary{
+    color: var(--color_primary);
+}
+
+.color_second{
+    color: var(--color_second);
+}
+
+.color_black{
+    color: var(--color_black);
+}
+
+.color_grey{
+    color: var(--color_grey);
+}
+
+.color_white{
+    color: white;
+}

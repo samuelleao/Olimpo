@@ -1,0 +1,43 @@
+footer {
+    padding: 60px 0px 20px 0px;
+    background-image: url(../images/logotipo/effect_footer.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+.footer_links {
+    padding: 100px 0px;
+}
+
+.footer_links ul {
+    padding-left: 0px;
+}
+
+.footer_links ul li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+.footer_links ul li a:hover {
+    color: var(--color_primary) !important;
+}
+
+.social_medias_area {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: var(--border_radius);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+    background-color: #3B5998;
+}
+
+.social_medias_area_instagram {
+    background: linear-gradient(180deg, #C32A8F 0%, rgba(151, 70, 255, 0.86) 100%);
+}
+
+.social_medias_area_youtube {
+    background-color: #FF3939;
+}

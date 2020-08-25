@@ -1,0 +1,30 @@
+#modal_sevice .modal_area {
+    width: auto;
+    padding: 0px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border_radius);
+    position: relative;
+    overflow: hidden;
+}
+
+.form_area{
+    padding: 50px 30px !important;
+}
+
+.service_img_modal{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media(max-width: 991px){
+    .service_img_modal{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,59 @@
+section{
+    display: grid;
+    align-items: flex-start;
+    justify-items: center;
+    background-color: #afafaf;
+    padding: 100px 0px;
+}
+
+section.buttons{
+    background-color: #9e86ff;
+}
+
+section.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f5f5f5;
+}
+
+section.fonts{
+    background-color: var(--color_second);
+}
+
+section.colors .bg_color{
+    width: 300px;
+    height: 20px;
+    margin-top: 5px;
+}
+section.cards > div {
+    width: 50%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+section.inputs{
+    background-color: #fff;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+section.inputs > div{
+    width: 50%;
+}
+
+
+@media(max-width: 991px){
+    section.cards > div {
+        width: 100%;
+    }
+    section.cards{
+        padding: 10px 20px;
+    }
+    section.inputs > div{
+        width: 100%;
+    }
+}

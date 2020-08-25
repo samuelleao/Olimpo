@@ -1,0 +1,45 @@
+.loading_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animate_load_start 2s;
+}
+
+.loading_container.load_hidden{
+    animation: animate_load 4s ;
+    transform: translateX(150%) ;
+}
+
+@keyframes animate_load {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-150%);
+    }
+}
+
+
+
+
+@keyframes animate_load_start {
+    from{
+        transform: translateX(-150%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+

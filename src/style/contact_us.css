@@ -1,0 +1,73 @@
+.contact_card_deatails {
+    width: 80%;
+    border-top: 2px solid #FF3939;
+}
+
+.contact_card_deatails.border_color_pupple {
+    border-color: #6D4AFB !important;
+}
+
+.contact_card_deatails.border_color_green {
+    border-color: #00C95C !important;
+}
+.contact_us_area{
+    padding: 100px 0px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.contact_us_card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 30%;
+    padding: 50px 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.error{
+    display: inline-block;
+    margin-bottom: .5rem;
+    position: absolute;
+    top: 100%;
+    font-size: 14px;
+    color: #FF3939;
+}
+
+.row_options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ 
+.options_area{
+    margin-top: 35px;
+}
+
+.row_options button{
+    width: auto;
+    margin-top: 10px !important;
+}
+.contact_us_card .message_effect{
+    background-color: var(--color_second);
+}
+@media(max-width: 1300px){
+    .contact_us_card {
+        width: 70%;
+    }
+    
+}
+
+@media(max-width: 991px){
+    .contact_us_card {
+        width: 100%;
+    }
+
+    .contact_us_area{
+        padding: 0px;
+    }
+    
+}

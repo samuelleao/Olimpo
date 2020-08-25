@@ -1,0 +1,79 @@
+button {
+    background-color: transparent;
+    height: 50px;
+    padding: 0px 30px;
+    cursor: pointer;
+    border-radius: var(--border_radius);
+    border: 2px solid var(--color_black);
+    color: var(--color_black);
+    outline-style: none;
+    font-size: 18px;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin: 5px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    z-index: -1;
+    transform: translateX(-150%);
+    transition: all 0.6s ease;
+}
+
+
+button:hover::before {
+    transform: translateX(0%);
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+button:focus {
+    background-color: var(--color_primary) !important;
+    color: white !important;
+    outline-color: var(--color_primary) !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) !important;
+    border-color: var(--color_primary) !important;
+}
+
+.button_second {
+    background-color: var(--color_second);
+    color: white;
+    border-color: var(--color_second);
+}
+
+.button_primary {
+    background-color: var(--color_primary);
+    color: white;
+    border-color: var(--color_primary);
+}
+
+.button_white {
+    color: white;
+    border-color: white;
+}
+
+
+.button_active{
+    background-color: var(--color_primary) !important;
+    color: white !important;
+    outline-color: var(--color_primary) !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) !important;
+    border-color: var(--color_primary) !important;
+}
+
+

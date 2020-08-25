@@ -1,0 +1,22 @@
+{
+  "name": "howto",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-validation": "^1.19.2",
+    "jquery-mask-plugin": "^1.14.16",
+    "animate.css": "^4.1.0",
+    "bootstrap": "^4.5.2",
+    "popper.js": "^2.4.4",
+    "jquery": "^3.5.1",
+    "Font-Awesome": "^5.14.0"
+  }
+}

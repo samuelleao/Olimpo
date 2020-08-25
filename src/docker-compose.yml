@@ -1,0 +1,42 @@
+version: "3.1"
+services:
+    www:
+        build: .
+        ports: 
+            - "8001:80"
+        volumes:
+            - .:/var/www/html/
+        links:
+            - db
+        networks:
+            - default
+    db:
+        image: mysql:5.7
+        command: mysqld --sql_mode="" --character-set-server=utf8 --collation-server=utf8_general_ci
+        ports: 
+            - "9000:3306"
+        environment:
+            MYSQL_DATABASE: olimpo_db
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: test
+            TZ: "America/Recife"
+        volumes:
+            - ./dump:/docker-entrypoint-initdb.d
+            - ./database:/var/lib/mysql
+        networks:
+            - default
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links: 
+            - db:db
+        ports:
+            - 8000:80
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: test
+
+
+# volumes:
+    # persistent:

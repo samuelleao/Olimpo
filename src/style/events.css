@@ -1,0 +1,15 @@
+#page_events .projects_area{
+    padding: 100px 0px !important;
+}
+
+#page_events .element_scroll_effect {
+    opacity: 1;
+}
+
+
+@media(max-width: 991px){
+    .events .container{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}

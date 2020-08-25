@@ -1,0 +1,15 @@
+#page_blog .category_elements  {
+    max-width: 1020px !important;
+}
+
+@media(max-width: 1036px){
+    #page_blog .category_elements  {
+        max-width: min-content !important;
+    }
+}
+
+@media(max-width: 995px){
+    #page_blog .category_elements  {
+        max-width: 720px !important;
+    }
+}

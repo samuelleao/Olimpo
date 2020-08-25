@@ -1,0 +1,38 @@
+.categories {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 45px 0px;
+}
+
+.categories::-webkit-scrollbar {
+    height: 10px;
+}
+
+.categories::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: white;
+    -webkit-box-shadow: white;
+}
+
+@media(max-width: 1009px) {
+     .categories {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 20px 0px;
+    }
+     /* .categories .categories_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        white-space: nowrap;
+    } */
+}
