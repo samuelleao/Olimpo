@@ -48,7 +48,15 @@
     overflow: hidden;
 }
 
+.card_vertical .card_vertical_img{
+    overflow: hidden;
+}
+
 .card_horizontal .card_horizontal_img img{
+    transition: .6s;
+}
+
+.card_vertical .card_vertical_img img{
     transition: .6s;
 }
 
@@ -69,6 +77,10 @@
   
 }
 
+.card_vertical:hover .card_vertical_img img{
+    transform: scale(1.1);
+}
+
 .card_vertical:hover span{
     color: white !important;
 }
@@ -87,9 +99,9 @@
     .card_horizontal .card_horizontal_body{
         width: 100%;
     }
-
     .card_vertical {
-        min-width: 300px;
-       
+        min-width: 70% !important;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }

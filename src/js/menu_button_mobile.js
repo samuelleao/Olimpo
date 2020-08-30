@@ -1,7 +1,6 @@
 const menu        = document.querySelector('#navbarNav')
 const menu_button = document.querySelector('.navbar-toggler')
 const body        = document.querySelector('body')
-
 menu_button.addEventListener('click', () => {
     if (menu_button.classList.toggle('menu_button_active') && menu.classList.toggle('collapse-show')) {
         menu.classList.add('collapse-show');

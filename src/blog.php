@@ -16,7 +16,7 @@
     </section>
     <div class="categories bg_white_ice" id="categories_area">
         <a href="#categories_area">
-            <button class="categories_button button_category_filter button_active" data-show-category="todos">Todos</button>
+            <button class="categories_button button_category_filter" data-show-category="todos">Todos</button>
         </a>
         <a href="#categories_area">
             <button class="categories_button button_category_filter" data-show-category="novidades">Novidades</button>

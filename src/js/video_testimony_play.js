@@ -5,4 +5,4 @@ var monitor = setInterval(() => {
     if (elem && elem.tagName == 'IFRAME') {
         video_filter.classList.add('hide_filter')
     }
-}, 100)
+}, 100);

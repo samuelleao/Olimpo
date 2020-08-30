@@ -10,20 +10,21 @@
                     <div class="col-lg-6 form_area">
                         <h6 class="title_medium">Quase tudo pronto!
                             Basta preencher os campos abaixo</h6>
-                        <form action="" id="form_forgot_password">
+                        <form id="form_service_lead">
+                            <input type="hidden" value="Nome do serviço" name="lead">
                             <div class="input_area" id="service_name">
-                                <input type="text" placeholder="Digite seu nome aqui" required  onkeyup="valid(this)" class="input_valid" data-valid="service_name">
+                                <input name="form_service_lead_name" type="text" placeholder="Digite seu nome aqui" required  onkeyup="valid(this)" class="input_valid" data-valid="service_name">
                                 <div class="input_label_area">
                                     <label class="label_value">Nome</label>
                                 </div>
                             </div>
                             <div class="input_area" id="service_email">
-                                <input type="text" placeholder="Digite seu email aqui" required onkeyup="valid(this)" class="input_valid" data-valid="service_email">
+                                <input name="form_service_lead_email" type="text" placeholder="Digite seu email aqui" required onkeyup="valid(this)" class="input_valid" data-valid="service_email">
                                 <div class="input_label_area">
                                     <label class="label_value">Email</label>
                                 </div>
                             </div>
-                            <button class="button_primary">Solicitar</button>
+                            <button class="button_primary" id="form_service_lead_submit">Solicitar</button>
                         </form>
                         <div class="message_effect sucess_form">
                             <div class="text-center">

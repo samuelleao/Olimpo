@@ -4,7 +4,7 @@
     </div>
     <div class="categories bg_white_ice" id="categories">
         <a href="#categories">
-            <button class="categories_button button_category_filter button_active" data-show-category="todos">Todos</button>
+            <button class="categories_button button_category_filter" data-show-category="todos">Todos</button>
         </a>
         <a href="#categories">
             <button class="categories_button button_category_filter" data-show-category="olimpo_recepcoes">Olimpo Recepções</button>

@@ -49,6 +49,8 @@
                 Respoderemos o mais breve possível
             </p>
             <form action="" id="form_contact_us">
+                <input type="hidden" name="acao" id="acao" value="contato">
+
                 <div class="input_area" id="name">
                     <input name="form_contact_us_name" type="text" placeholder="Digite seu nome aqui" required onkeyup="valid(this)" class="input_valid" data-valid="name">
                     <div class="input_label_area">
@@ -79,16 +81,20 @@
                         <label class="label_value">Mensagem</label>
                     </div>
                 </div>
-               <div class="options_area">
-               <span class="p_little">Selecione o setor:</span>
-                <div class="row_options">
-                    <!-- the IDs are in archive form_contact_us.js, in function getSetor() -->
-                    <button class="categories_button button_setor" data-setor="buffet">Buffet</button>
-                    <button class="categories_button button_setor" data-setor="decoracao">Decoração</button>
-                    <button class="categories_button button_setor" data-setor="financeiro">Financeiro</button>
-                    <button class="categories_button button_setor" data-setor="rh">RH</button>
+                <div class="options_area">
+                    <span class="p_little">Selecione o setor:</span>
+                    <div class="row_options">
+                        <!-- the IDs are in archive form_contact_us.js, in function getSetor() -->
+                        <button class="categories_button button_setor" data-email_setor="contato@olimporecepcoes.com.br" data-setor="Buffet">Buffet</button>
+                        <button class="categories_button button_setor" data-email_setor="contato@olimporecepcoes.com.br" data-setor="Decoracao">Decoração</button>
+                        <button class="categories_button button_setor" data-email_setor="contato@olimporecepcoes.com.br" data-setor="Financeiro">Financeiro</button>
+                        <button class="categories_button button_setor" data-email_setor="contato@olimporecepcoes.com.br" data-setor="Recursos Humanos">RH</button>
+                    </div>
+                    <div class="input_area input_area_textarea" id="setor_input_area">
+                        <input type="text" name="form_contact_us_setor" id="setor" required class="input_valid" value="" />
+                        <input type="hidden" name="form_contact_us_email_setor" id="form_contact_us_email_setor" value="">
+                    </div>
                 </div>
-               </div>
                 <button class="button_second" id="form_contact_us_submit">Enviar</button>
             </form>
             <div class="message_effect sucess_form">

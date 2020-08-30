@@ -3,7 +3,7 @@
 <head>
     <?php include_once 'head.php'; ?>
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="bower_components/uikit/dist/css/uikit.min.css" />
     <title>Olimpo</title>
 </head>
 <body id="page_index">
@@ -129,16 +129,14 @@
             </div>
         </div>
     </div>
-    
     <?php include_once 'events_content.php'; ?>
     <?php include_once 'service_vip.php'; ?>
     <?php include_once 'footer.php'; ?>
     <?php include_once 'service_modal.php'; ?>
-
     <?php include_once 'scripts.php'; ?>
     <script src="js/header_background.js"></script> 
     <!-- UIkit JS -->
-    <script class="service_slide_img" src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
-    <script class="service_slide_img" src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
+    <script src="bower_components/uikit/dist/js/uikit.min.js"></script>
+    <script src="bower_components/uikit/dist/js/uikit-icons.min.js"></script>
 </body>
 </html>

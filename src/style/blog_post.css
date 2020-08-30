@@ -11,6 +11,26 @@
     z-index: 2;
 }
 
+.at-icon-wrapper{
+    border-radius: var(--border_radius) !important;
+}
+
+.details span{
+    font-size: 15px;
+    color: var(--color_grey);
+}
+
+.blog_navigation_links span a{
+    color: var(--color_second);
+    font-size: 15px;
+}
+
+.blog_navigation_links span a:hover{
+    --color_second: rgb(109 54 251 / 1);
+    color: var(--color_second);
+    font-weight: 700;
+}
+
 #page_blog_post footer{
     padding-bottom: 120px;
 }

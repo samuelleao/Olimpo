@@ -28,15 +28,6 @@
     overflow: hidden;
 }
 
-.error{
-    display: inline-block;
-    margin-bottom: .5rem;
-    position: absolute;
-    top: 100%;
-    font-size: 14px;
-    color: #FF3939;
-}
-
 .row_options{
     display: flex;
     flex-direction: row;
@@ -45,6 +36,16 @@
  
 .options_area{
     margin-top: 35px;
+}
+
+#setor_input_area{
+    height: 1px !important;
+    margin: 0 !important;
+}
+
+#setor{
+    visibility: hidden;
+    touch-action: none;
 }
 
 .row_options button{
